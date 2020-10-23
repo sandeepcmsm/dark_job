@@ -1,3 +1,4 @@
+import 'package:custom_switch_button/custom_switch_button.dart';
 import 'package:dark_job/atoms/text_base.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -109,9 +110,6 @@ class ScreenTwo extends StatelessWidget {
                   ),
                 ),
               ),
-              // Expanded(
-              //   child: Container(),
-              // ),
               Align(
                 alignment: Alignment.bottomCenter,
                 child: Container(
@@ -202,14 +200,12 @@ class ScreenTwo extends StatelessWidget {
                                   ],
                                 ),
                               ),
-                              Padding(
-                                padding: const EdgeInsets.only(left: 8.0),
-                                child: Switch(
-                                  value: true,
-                                  activeTrackColor: Colors.white,
-                                  activeColor: Colors.black,
-                                  onChanged: (value) {},
-                                ),
+                              CustomSwitchButton(
+                                backgroundColor: Colors.white,
+                                unCheckedColor: Colors.black,
+                                animationDuration: Duration(milliseconds: 400),
+                                checkedColor: Colors.black,
+                                checked: true,
                               ),
                             ],
                           ),
