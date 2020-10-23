@@ -11,11 +11,11 @@ class ScreenThree extends StatelessWidget {
         child: Column(
           children: <Widget>[
             Container(
-              height: 400,
+              height: MediaQuery.of(context).size.height / 2,
               color: Color(0xFF22242C),
             ),
             Container(
-              height: MediaQuery.of(context).size.height - 400,
+              height: MediaQuery.of(context).size.height / 2,
               decoration: BoxDecoration(
                 color: Color(0xFF1A1B20),
                 borderRadius: BorderRadius.only(
